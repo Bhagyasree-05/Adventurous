@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h1>🌍 Plan Your Trip</h1>
+      <a href="login.html" class="logout-btn">Logout</a>
+    </div>
+    <form action="confirmation.html" method="GET" class="booking-form">
+      <input type="text" name="destination" placeholder="Enter Destination" required />
+      <input type="date" name="date" required />
+      <input type="number" name="guests" placeholder="Number of Guests" min="1" required />
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</body>
+</html>
