@@ -5,25 +5,26 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/harshapradha07/Travel-booking.git'
+                git branch: 'main',
+                    url: 'https://github.com/harshapradha07/Travel-booking.git'
             }
         }
 
         stage('List Project Files') {
             steps {
-                sh 'ls -la'
+                bat 'dir'
             }
         }
 
-        stage('Build (Optional)') {
+        stage('Build') {
             steps {
-                echo "No build needed for static website"
+                echo "No build required for static website"
             }
         }
 
         stage('Deploy') {
             steps {
-                echo "Deploying Travel Booking Website..."
+                echo "Deployment step will be added later"
             }
         }
     }
